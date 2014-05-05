@@ -49,7 +49,9 @@ facebook出品的paper，动画效果太好了，赶超apple的原生apple一大
 
 5. KissXML robbiehanson/KissXML GitHub，我们平时一般使用json格式的数据，除了组装xmpp聊天消息，对这个没有怎么使用过，不敢评论。
 
-  -   AFNetworking：AFNetworking/AFNetworking · GitHub，毫无疑问，最火的网络库，本人11年开始做iOS开发的时候，是使用ASI的，一直没有使用过AFNetworking，直到12年的时候，发现ASI作者基本不更新ASI之后，才开始关注这个项目。ASI是基于CFSocket实现的HTTP网络库，作者功底之强，跟上面的老大一样让人拜服，而AFNetworking是基于NSURLConnection，以及iOS7之后出现的NSURLSession为基础开发的。由于AFNetworking基于Apple的封装，少了很多需要自己维护的地方，而且整个项目也会非常整洁，可能效率上也会高于ASI的封装。建议可以把整个项目过一遍，框架设计思想不用说了，里面也可以学习到非常多的技术点。
+  -    AFNetworking：AFNetworking/AFNetworking ·
+
+GitHub，毫无疑问，最火的网络库，本人11年开始做iOS开发的时候，是使用ASI的，一直没有使用过AFNetworking，直到12年的时候，发现ASI作者基本不更新ASI之后，才开始关注这个项目。ASI是基于CFSocket实现的HTTP网络库，作者功底之强，跟上面的老大一样让人拜服，而AFNetworking是基于NSURLConnection，以及iOS7之后出现的NSURLSession为基础开发的。由于AFNetworking基于Apple的封装，少了很多需要自己维护的地方，而且整个项目也会非常整洁，可能效率上也会高于ASI的封装。建议可以把整个项目过一遍，框架设计思想不用说了，里面也可以学习到非常多的技术点。
 
 1. NSOperation的封装与使用，面试的时候很多人只知道apple有NSOperation这个技术，但是实际上使用的机会并不多，只知道是个队列，但是对于如何使用并不知晓。可惜的是，这个只提供了如何使用进非并发Operation的封装。完整学习的话，可以学习ASI中对operation的使用，会更完整一些。
 
@@ -57,14 +59,14 @@ facebook出品的paper，动画效果太好了，赶超apple的原生apple一大
 
 3. Runloop的使用，建议与ASI实现同步请求的方法进行对比，有条件的话可以跟android的looper机制进行对比，说不定什么时候会使用到，实际xmppframework中也有用到，只是不是核心机制，而且本人没有研究过。本人从11年做iOS到现在，只是使用到过一次，是需要自己实现一个OpenGL的渲染队列，由于需要在子线程中做渲染，无法使用CADisplaylink。刚开始其实是使用GCD的，但发现即使我创建一个dispatch_queue_t，也无法保证block是在子线程中被执行，而且还有较为复杂的内存管理问题，最后使用NSThread与runloop才解决问题。
 
-  -   SDWebImage：rs/SDWebImage · GitHub，不需要多说，这个框架写的非常简洁，也是读这个框架，让我明白什么是缓存机制，以及如何做面向对象的封装设计，我之后有的场景也需要自己去设计一些cache，每次都是借鉴这个框架实现，能力有限，自己实在想不出比这个设计思路好的地方，只能借鉴别人的做法。我觉得这个项目还有一个非常值得推崇的地方，就是对category的使用，这个是我今年之前一直忽略的非常重要的设计模式，太适合团队开发了，<cocoa设计模式>上讲的东西，做到现在我才明白怎么回事，可以对比Android使用网络图片，你会发现OC的category真方便。
+  -    SDWebImage：rs/SDWebImage · GitHub，不需要多说，这个框架写的非常简洁，也是读这个框架，让我明白什么是缓存机制，以及如何做面向对象的封装设计，我之后有的场景也需要自己去设计一些cache，每次都是借鉴这个框架实现，能力有限，自己实在想不出比这个设计思路好的地方，只能借鉴别人的做法。我觉得这个项目还有一个非常值得推崇的地方，就是对category的使用，这个是我今年之前一直忽略的非常重要的设计模式，太适合团队开发了，<cocoa设计模式>上讲的东西，做到现在我才明白怎么回事，可以对比Android使用网络图片，你会发现OC的category真方便。
 
-  -   EGOTableViewPullRefresh： enormego/EGOTableViewPullRefresh GitHub，本来不打算说UI方面类库的，但是这个必须说一下。建议读一下这个的源码，以及如何使用，对iOS UI开发有很大提升，这个类库写的很简洁，可以帮助理解delegate机制以及Protocol的概念，还能加深对UIScrollView的理解，推荐读一下。
+  -    EGOTableViewPullRefresh： enormego/EGOTableViewPullRefresh GitHub，本来不打算说UI方面类库的，但是这个必须说一下。建议读一下这个的源码，以及如何使用，对iOS UI开发有很大提升，这个类库写的很简洁，可以帮助理解delegate机制以及Protocol的概念，还能加深对UIScrollView的理解，推荐读一下。
 
-  -   TheElements：TheElements，这个是apple的官方示例代码，每次我朋友问题如何学习iOS的时候，我总会推荐这个samplecode，这个代码让我对iOS开发的理解有个很大的突破。里面并没有使用大量的storyboard和xib隐藏细节，并不是说只能用纯代码做事情，而是可以让人看到里面很多的实现细节，加深理解。读这个代码，我才明白什么是apple说的MVC，还有一个xcode工程到底是如何从main函数运行起来的，非常强烈推荐阅读学习。
+  -    TheElements：TheElements，这个是apple的官方示例代码，每次我朋友问题如何学习iOS的时候，我总会推荐这个samplecode，这个代码让我对iOS开发的理解有个很大的突破。里面并没有使用大量的storyboard和xib隐藏细节，并不是说只能用纯代码做事情，而是可以让人看到里面很多的实现细节，加深理解。读这个代码，我才明白什么是apple说的MVC，还有一个xcode工程到底是如何从main函数运行起来的，非常强烈推荐阅读学习。
 
 
-  -   Masonry
+  -    Masonry
 
 大大简化AutoLayout的写法。比如
 
@@ -72,7 +74,7 @@ facebook出品的paper，动画效果太好了，赶超apple的原生apple一大
     make.edges.equalTo(superview).with.insets(padding);
 }];
 
-  -   CocoaLumberjack
+  -    CocoaLumberjack
 
 日志库。
 
