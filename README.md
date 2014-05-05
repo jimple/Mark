@@ -49,7 +49,9 @@ GitHub，这个如果是做过聊天的通信通信可能会用过，本人因�
 
 4. CocoaLumberjack，CocoaLumberjack/CocoaLumberjack GitHub，这个是作者写的一个log系统，实现了分级别的日志系统，不过本人没有使用和学习这个，我们项目没有那么复杂，我是自己使用宏和NSLog写了一个分级别显示的日志系统，只能用于打印，不能像这个日志可以写入文件。
 
-5. KissXML robbiehanson/KissXML GitHub，我们平时一般使用json格式的数据，除了组装xmpp聊天消息，对这个没有怎么使用过，不敢评论。
+5. KissXML robbiehanson/KissXML GitHub
+
+我们平时一般使用json格式的数据，除了组装xmpp聊天消息，对这个没有怎么使用过，不敢评论。
 
 
 
