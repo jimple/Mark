@@ -58,5 +58,17 @@ facebook出品的paper，动画效果太好了，赶超apple的原生apple一大
 五. TheElements：TheElements，这个是apple的官方示例代码，每次我朋友问题如何学习iOS的时候，我总会推荐这个samplecode，这个代码让我对iOS开发的理解有个很大的突破。里面并没有使用大量的storyboard和xib隐藏细节，并不是说只能用纯代码做事情，而是可以让人看到里面很多的实现细节，加深理解。读这个代码，我才明白什么是apple说的MVC，还有一个xcode工程到底是如何从main函数运行起来的，非常强烈推荐阅读学习。
 
 
+1. Masonry
+
+大大简化AutoLayout的写法。比如
+
+[view1 mas_makeConstraints:^(MASConstraintMaker *make) {
+    make.edges.equalTo(superview).with.insets(padding);
+}];
+
+2. CocoaLumberjack
+
+日志库。
+
 
 
