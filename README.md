@@ -12,7 +12,7 @@ http://github.ibireme.com/github/list/ios/
 ======================================================
 
 
-1. ReactiveCocoa：ReactiveCocoa/ReactiveCocoa · GitHub：
+-- ReactiveCocoa：ReactiveCocoa/ReactiveCocoa · GitHub：
 
 GitHub自家的函数式响应式编程泛型的Objective-C实现，名字听着很高大上，学习曲线确实也比较陡，但是绝对会改变你对iOS编程的认知，首推之。
 
