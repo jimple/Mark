@@ -49,8 +49,8 @@ facebook出品的paper，动画效果太好了，赶超apple的原生apple一大
 
 5. KissXML robbiehanson/KissXML GitHub，我们平时一般使用json格式的数据，除了组装xmpp聊天消息，对这个没有怎么使用过，不敢评论。
 
-  -    AFNetworking：AFNetworking/AFNetworking ·
 
+  -    AFNetworking：AFNetworking/AFNetworking ·
 GitHub，毫无疑问，最火的网络库，本人11年开始做iOS开发的时候，是使用ASI的，一直没有使用过AFNetworking，直到12年的时候，发现ASI作者基本不更新ASI之后，才开始关注这个项目。ASI是基于CFSocket实现的HTTP网络库，作者功底之强，跟上面的老大一样让人拜服，而AFNetworking是基于NSURLConnection，以及iOS7之后出现的NSURLSession为基础开发的。由于AFNetworking基于Apple的封装，少了很多需要自己维护的地方，而且整个项目也会非常整洁，可能效率上也会高于ASI的封装。建议可以把整个项目过一遍，框架设计思想不用说了，里面也可以学习到非常多的技术点。
 
 1. NSOperation的封装与使用，面试的时候很多人只知道apple有NSOperation这个技术，但是实际上使用的机会并不多，只知道是个队列，但是对于如何使用并不知晓。可惜的是，这个只提供了如何使用进非并发Operation的封装。完整学习的话，可以学习ASI中对operation的使用，会更完整一些。
