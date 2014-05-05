@@ -63,7 +63,9 @@ GitHub，毫无疑问，最火的网络库，本人11年开始做iOS开发的时
 
 2. HTTP请求的封装，如何封装POST请求，如何进行URL encode，如何使用NSInputstream，可以对HTTP理解有个突破。同时可以学习一下NSURLSession与NSURLConnection的使用。
 
-3. Runloop的使用，建议与ASI实现同步请求的方法进行对比，有条件的话可以跟android的looper机制进行对比，说不定什么时候会使用到，实际xmppframework中也有用到，只是不是核心机制，而且本人没有研究过。本人从11年做iOS到现在，只是使用到过一次，是需要自己实现一个OpenGL的渲染队列，由于需要在子线程中做渲染，无法使用CADisplaylink。刚开始其实是使用GCD的，但发现即使我创建一个dispatch_queue_t，也无法保证block是在子线程中被执行，而且还有较为复杂的内存管理问题，最后使用NSThread与runloop才解决问题。
+3. Runloop的使用，
+
+建议与ASI实现同步请求的方法进行对比，有条件的话可以跟android的looper机制进行对比，说不定什么时候会使用到，实际xmppframework中也有用到，只是不是核心机制，而且本人没有研究过。本人从11年做iOS到现在，只是使用到过一次，是需要自己实现一个OpenGL的渲染队列，由于需要在子线程中做渲染，无法使用CADisplaylink。刚开始其实是使用GCD的，但发现即使我创建一个dispatch_queue_t，也无法保证block是在子线程中被执行，而且还有较为复杂的内存管理问题，最后使用NSThread与runloop才解决问题。
 
 
   -   SDWebImage：rs/SDWebImage · GitHub，
