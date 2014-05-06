@@ -5,11 +5,15 @@ https://github.com/ReactiveCocoa/ReactiveCocoa
 
 介绍：
 http://blog.devtang.com/blog/2014/02/11/reactivecocoa-introduction/
+https://speakerdeck.com/robb/reactivecocoa-nsspain
 
 http://iiiyu.com/2013/09/11/learning-ios-notes-twenty-eight/
 http://iiiyu.com/2013/10/15/learning-ios-notes-twenty-nine/
 
 http://www.itiger.me/?p=38
+
+Reactive Extension的介绍：
+http://www.cnblogs.com/yangecnu/archive/2012/11/03/Introducting_ReactiveExtensions.html
 
 一个使用的例子：
 http://sjpsega.com/blog/2014/02/11/yi--ios-7-best-practices-part-1/
@@ -19,7 +23,7 @@ http://sjpsega.com/blog/2014/02/15/yi--ios-7-best-practices-part-2/
   -  关于MVC与MVVM的理解
   MVC：V接受交互请求，C根据请求向M获取数据，C将M送给V，V显示或回复请求。对M的处理在V中进行。
   MVVM：V接受交互请求，V传递给VM，VM根据请求向M获取数据，VM处理M并通知V改变界面呈现。对M的处理在VM中进行。
-
+  MVVM Example: https://github.com/Machx/MVVM-IOS-Example
 
 
 
