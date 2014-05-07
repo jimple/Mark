@@ -41,7 +41,7 @@ http://sjpsega.com/blog/2014/02/15/yi--ios-7-best-practices-part-2/
 
   -  关于MVC与MVVM的理解
   MVC：V接受交互请求，C根据请求向M获取数据，C将M送给V，V显示或回复请求。对M的处理在V中进行。
-  MVVM：V接受交互请求，V传递给VM，VM根据请求向M获取数据，VM处理M并通知V改变界面呈现。对M的处理在VM中进行。
+  MVVM：C接受V的交互请求，VC传递给VM，VM根据请求向M获取数据，VM处理M并通知VC改变界面呈现。对M的处理在VM中进行。
   MVVM Example: https://github.com/Machx/MVVM-IOS-Example
 
 
