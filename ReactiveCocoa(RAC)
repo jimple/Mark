@@ -34,9 +34,12 @@ http://blog.sina.com.cn/s/blog_6591f6a20101cmz5.html
 Reactive Extension的介绍：
 http://www.cnblogs.com/yangecnu/archive/2012/11/03/Introducting_ReactiveExtensions.html
 
-一个使用的例子：
+一个使用RAC的例子（天气预报）：
 http://sjpsega.com/blog/2014/02/11/yi--ios-7-best-practices-part-1/
 http://sjpsega.com/blog/2014/02/15/yi--ios-7-best-practices-part-2/
+
+一个MVVM例子：
+http://cocoasamurai.blogspot.hk/2013/03/basic-mvvm-with-reactivecocoa.html
 
 
   -  关于MVC与MVVM的理解
