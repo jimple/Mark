@@ -24,7 +24,7 @@ GitHub自家的函数式响应式编程泛型的Objective-C实现，名字听着
 
 iOS7之前，苹果自带的网络库有多难用！matt大神的AFNetworking绝对可以解放你。使用苹果的NSURLRequest及iOS7的NSURLSession，清晰的架构，足够的文档，可以认为是第三方开源库的楷模了。
 
-  -   BlocksKit: pandamonia/BlocksKit 路 GitHub
+  -   BlocksKit: zwaldowski/BlocksKit  GitHub
 
 本人相当偏爱Functional Programming，Objective-C中的block绝对满足我的口味。但想用好block也不是很容易，如果对block有爱，就请使用这个库吧。
 
