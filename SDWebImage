@@ -10,8 +10,10 @@ SDWebImage之上添加进度：
 https://github.com/JJSaccolo/UIActivityIndicator-for-SDWebImage
  
  
- 
+
   -  使用 options:SDWebImageRefreshCached 跟踪变化的图像，例如用户头像，URL相同但可能改变。会略微降低性能。
+  -  延时下载 SDWebImageLowPriority 
+  -  渐进式下载显示图片 SDWebImageProgressiveDownload
  
  
 
