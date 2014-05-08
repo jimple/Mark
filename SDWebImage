@@ -10,7 +10,7 @@ SDWebImage之上添加进度：
 https://github.com/JJSaccolo/UIActivityIndicator-for-SDWebImage
  
  
-
+  -  UIImageView (WebCache)会先取消原来的下载，再启动新加载。也就是下载到一半的图片被取消后下次需从头开始下载。
   -  使用 options:SDWebImageRefreshCached 跟踪变化的图像，例如用户头像，URL相同但可能改变。会略微降低性能。
   -  延时下载 SDWebImageLowPriority 
   -  渐进式下载显示图片 SDWebImageProgressiveDownload
