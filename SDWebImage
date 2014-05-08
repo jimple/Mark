@@ -1,0 +1,13 @@
+
+
+
+https://github.com/rs/SDWebImage
+
+一个具体使用的例子：
+http://www.wrichards.com/blog/2011/11/sdwebimage-fixed-width-cell-images/
+ 
+ 
+  -  使用 options:SDWebImageRefreshCached 跟踪变化的图像，例如用户头像，URL相同但可能改变。会略微降低性能。
+ 
+ 
+
