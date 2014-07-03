@@ -1,4 +1,5 @@
 
+--------------------------------------------------------------------------
  - text不仅可直接依据RACObserve观察的值变化，而且可将RACObserve的值进行判断后重新输出。
   UITextField的rac_textSignal一样可用。combineLatest中可以放多个值，响应多个值变化。
     RAC(self.statusLabel, text) = [RACSignal
@@ -7,6 +8,7 @@
                                     return ([text hasPrefix:@"T"] ? [NSString stringWithFormat:@"1-%@", text] : text);
                                 }];
 
+--------------------------------------------------------------------------
  - 对观察的值做过滤
  [[RACObserve(self, username)
     filter:^(NSString *newName) {
@@ -15,3 +17,15 @@
     subscribeNext:^(NSString *newName) {
         NSLog(@"%@", newName);
     }];
+
+
+--------------------------------------------------------------------------
+// fetchUserRepos与fetchOrgRepos是两个异步操作，merge会在两个操作都完成的情况下返回一个新的信号。
+[[RACSignal 
+    merge:@[ [client fetchUserRepos], [client fetchOrgRepos] ]] 
+    subscribeCompleted:^{
+        NSLog(@"They're both done!");
+    }];
+    
+    
+--------------------------------------------------------------------------
