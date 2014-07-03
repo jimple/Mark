@@ -1,4 +1,8 @@
 
+
+出处： https://github.com/CocoaPods/CocoaPods/issues/2219#issuecomment-44979127
+
+
 首先安装Xcode6 的 Command Line Tools，在开发者中心下载
 
 接下来按照下面步骤操作：
@@ -15,7 +19,6 @@ $ sudo gem install xcodeproj
 $ sudo gem install cocoapods
 最后运行 pod --version 就看到Pod正常了。
 
-出处： https://github.com/CocoaPods/CocoaPods/issues/2219#issuecomment-44979127
 
 
 
