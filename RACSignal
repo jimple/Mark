@@ -1,7 +1,8 @@
 
 --------------------------------------------------------------------------
  - text不仅可直接依据RACObserve观察的值变化，而且可将RACObserve的值进行判断后重新输出。
-  UITextField的rac_textSignal一样可用。combineLatest中可以放多个值，响应多个值变化。
+  UITextField的rac_textSignal一样可用。
+  combineLatest中可以放多个信号，响应多个信号变化（但是需要多个信号都至少有一个值时reduce才会执行）。
     RAC(self.statusLabel, text) = [RACSignal
                                 combineLatest:@[ RACObserve(self.viewModel, statusMessage) ]
                                 reduce:^(NSString *text) {
