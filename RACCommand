@@ -24,5 +24,22 @@ return [[[manager rac_POST:kSubscribeURL parameters:body] logError] replayLazily
 2、command实际是判断地址是否有效，然后返回rac_POST的信号直接执行。
 3、由于viewModel初始化时将statusMessage与command的状态绑定，而界面Label观察了statusMessage，所以command执行状态被显示到界面。
 
+----------------------------------------------------------------------------
+- 一个更简单的例子
+// 每当login按钮点击的时候，这一block就会被执行
+self.loginCommand = [[RACCommand alloc] initWithSignalBlock:^(id sender) {
+    // 这个登录方法返回一个信号，这个信号在网络请求结束的时候会发送一个值
+    return [client logIn];
+}];
 
+// -executionSignals方法每当loginCommand执行完成后返回一个包含上边block中返回的信号的信号
+[self.loginCommand.executionSignals subscribeNext:^(RACSignal *loginSignal) {
+    // 登录成功后输出
+    [loginSignal subscribeCompleted:^ {
+        NSLog(@"Logged in successfully!");
+    }];
+}];
+
+// 当按钮点击的时候执行loginCommand.
+self.loginButton.rac_command = self.loginCommand;
 
