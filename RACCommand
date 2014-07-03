@@ -43,3 +43,7 @@ self.loginCommand = [[RACCommand alloc] initWithSignalBlock:^(id sender) {
 // 当按钮点击的时候执行loginCommand.
 self.loginButton.rac_command = self.loginCommand;
 
+/////
+
+
+
