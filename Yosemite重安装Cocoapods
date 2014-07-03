@@ -1,0 +1,17 @@
+
+首先安装Xcode6 的 Command Line Tools，在开发者中心下载
+
+接下来按照下面步骤操作：
+
+打开 Xcode 6
+打开 Preferences
+选择 Locations 选项卡
+将 Command Line Tools 选择为 Xcode 6.0
+卸载 cocoapods
+$ sudo gem uninstall cocoapods
+安装 xcodeproj
+$ sudo gem install xcodeproj
+再安装 cocoapods
+$ sudo gem install cocoapods
+最后运行 pod --version 就看到Pod正常了。
+
