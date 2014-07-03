@@ -7,3 +7,11 @@
                                     return ([text hasPrefix:@"T"] ? [NSString stringWithFormat:@"1-%@", text] : text);
                                 }];
 
+ - 对观察的值做过滤
+ [[RACObserve(self, username)
+    filter:^(NSString *newName) {
+        return [newName hasPrefix:@"j"];
+    }]
+    subscribeNext:^(NSString *newName) {
+        NSLog(@"%@", newName);
+    }];
