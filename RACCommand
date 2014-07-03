@@ -1,0 +1,28 @@
+
+介绍：
+http://codeblog.shape.dk/blog/2013/12/05/reactivecocoa-essentials-understanding-and-using-raccommand/
+
+示例工程笔记：
+1、界面按钮触发viewModel的command。
+self.subscribeButton.rac_command = self.viewModel.subscribeCommand;
+
+2、viewModel初始化时用statusMessage响应comand的结果：
+ -- 正在发email显示@"Sending request..."
+ -- 发email完成显示@"Thanks"
+ -- 失败显示@"Error :("
+- (void)mapSubscribeCommandStateToStatusMessage;
+
+3、viewModel里command被触发时先判断email地址是否有效，有效则执行发送动作。
+return [SubscribeViewModel postEmail:self.email];
+
+4、发邮件函数内直接返回AFNetworking的RAC扩展方法rac_POST返回的信号。
+return [[[manager rac_POST:kSubscribeURL parameters:body] logError] replayLazily];
+
+
+动作触发过程：
+1、界面按钮被点击，触发viewModel的command。
+2、command实际是判断地址是否有效，然后返回rac_POST的信号直接执行。
+3、由于viewModel初始化时将statusMessage与command的状态绑定，而界面Label观察了statusMessage，所以command执行状态被显示到界面。
+
+
+
