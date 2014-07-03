@@ -52,6 +52,9 @@ http://cocoasamurai.blogspot.hk/2013/03/basic-mvvm-with-reactivecocoa.html
   MVVM：C接受V的交互请求，VC传递给VM，VM根据请求向M获取数据，VM处理M并通知VC改变界面呈现。对M的处理在VM中进行。
   MVVM Example: https://github.com/Machx/MVVM-IOS-Example
 
+使用RAC的工程例子
+https://github.com/AshFurrow/FunctionalReactivePixels
+
 
 
 -
