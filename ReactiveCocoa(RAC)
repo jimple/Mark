@@ -4,6 +4,8 @@
 github地址：
 https://github.com/ReactiveCocoa/ReactiveCocoa
 
+为什么要用RAC：
+http://www.cnblogs.com/yangecnu/archive/2012/11/03/Introducting_ReactiveExtensions.html
 
 介绍：
 http://blog.devtang.com/blog/2014/02/11/reactivecocoa-introduction/
@@ -52,5 +54,5 @@ http://cocoasamurai.blogspot.hk/2013/03/basic-mvvm-with-reactivecocoa.html
 
 
 
-
+-
 
