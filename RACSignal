@@ -1,0 +1,9 @@
+
+ - text不仅可直接依据RACObserve观察的值变化，而且可将RACObserve的值进行判断后重新输出。
+  UITextField的rac_textSignal一样可用。
+    RAC(self.statusLabel, text) = [RACSignal
+                                combineLatest:@[ RACObserve(self.viewModel, statusMessage) ]
+                                reduce:^(NSString *text) {
+                                    return ([text hasPrefix:@"T"] ? [NSString stringWithFormat:@"1-%@", text] : text);
+                                }];
+
