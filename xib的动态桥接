@@ -1,0 +1,10 @@
+
+在Storyboard中将一个view内的子view替换成另一个xib中的view。
+直接在view从xib创建时替换，而非创建后通过代码加入另一个xib的view。
+
+主要是利用  - (id) awakeAfterUsingCoder:(NSCoder*)aDecoder 方法，在placeholder view被创建时将其替换为正在需要显示的子view，并将placeholder的autolayout属性设置给正在显示的子view。
+
+http://blog.yangmeyer.de/blog/2012/07/09/an-update-on-nested-nib-loading
+
+http://blog.sunnyxx.com/2014/07/01/ios_ib_bridge/#more
+
