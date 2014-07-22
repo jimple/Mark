@@ -8,6 +8,9 @@ https://github.com/maxmyers/FacebookPop
 http://www.cocoachina.com/applenews/devnews/2014/0527/8565.html
 http://www.cocoachina.com/applenews/devnews/2014/0507/8339.html
 
+pop使用例子：
+https://github.com/kejinlu/facebook-pop-sample
+
 POP之上封装一些属性，可直接在storyboard中设置：
 https://github.com/WilliamZang/FastAnimationWithPOP
 https://github.com/WilliamZang/FastAnimationWithPopDemo    DEMO
