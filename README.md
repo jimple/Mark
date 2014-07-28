@@ -8,6 +8,7 @@ http://www.zhihu.com/question/22914651
 
 http://github.ibireme.com/github/list/ios/
 
+http://wangzz.github.io/blog/2014/04/25/githubyou-xiu-xiang-mu-ios/
 
 ======================================================
 
