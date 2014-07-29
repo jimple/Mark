@@ -1,0 +1,19 @@
+
+///////////////////////////////////////////////////////////////////////
+- (RACSignal *)rac_signalForSelector:(SEL)selector fromProtocol:(Protocol *)protocol;
+响应协议的方法，可用来替代响应delegate。
+
+    RACSignal *errorSignal =
+      [self rac_signalForSelector:@selector(flickrAPIRequest:didFailWithError:)
+                     fromProtocol:@protocol(OFFlickrAPIRequestDelegate)];
+
+    [errorSignal subscribeNext:^(RACTuple *tuple) {
+      [subscriber sendError:tuple.second];
+    }];
+
+///////////////////////////////////////////////////////////////////////
+- (RACSignal *)rac_signalForSelector:(SEL)selector;
+类似hook一个方法，在方法被调用后执行自己的一段代码。
+
+
+ 
