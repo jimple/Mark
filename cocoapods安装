@@ -1,0 +1,15 @@
+
+使用淘宝镜像
+
+$ gem sources --remove https://rubygems.org/
+//等有反应之后再敲入以下命令
+$ gem sources -a http://ruby.taobao.org/
+
+
+然后安装
+
+$ sudo gem install cocoapods
+
+
+ 
+
