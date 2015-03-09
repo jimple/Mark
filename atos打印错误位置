@@ -1,0 +1,18 @@
+
+
+原来32位编译时一直使用如下方式打印友盟错误报告上的crash地址：
+atos -arch armv7 -o 'XXX.app/XXX' 0x00000
+
+
+使用64位编译后，64位地址使用此方式无法打印代码位置，需修改为如下：
+
+atos -o XXX.app.dSYM/Contents/Resources/DWARF/XXX -l address0 targetAddress
+
+其中：
+XXX是AppName；
+address0是当前进程在内存中加载的起始地址，对应友盟错误报告里的Slide Address；
+targetAddress就是想要符号化的地址
+
+
+ps：需在dSYM文件所在目录中执行命令。
+
