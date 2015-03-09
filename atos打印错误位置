@@ -15,4 +15,7 @@ targetAddress就是想要符号化的地址
 
 
 ps：需在dSYM文件所在目录中执行命令。
+如果是dSYM同时带armv7和arm64，那么xcrun atos时最好带上加载地址-l和-arch.
+
+
 
