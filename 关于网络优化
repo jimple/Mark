@@ -1,0 +1,22 @@
+
+###直接绑定IP
+
+1. app服务端有多ip时，隔一段时间ping多ip，找出最快的一个。
+
+2. 利用NSURLProtocol，把域名指向最快的ip。
+
+可使用这个 https://github.com/mattt/NSEtcHosts 。
+
+### 使用HTTPS提高安全性
+
+### 使用SPDY压缩
+
+https://github.com/twitter/CocoaSPDY
+
+### 缓存请求和返回内容
+
+例如将请求和返回保持一段时间，如果期间有相同请求则直接使用缓存内容。
+
+
+
+
