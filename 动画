@@ -9,3 +9,5 @@ https://github.com/facebook/pop
 - 利用path实现按路径运行的动画
 http://oleb.net/blog/2010/12/animating-drawing-of-cgpath-with-cashapelayer/
 
+- navigation controller中转场动画的例子
+https://github.com/zys456465111/CustomPopAnimation
