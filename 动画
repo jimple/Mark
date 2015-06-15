@@ -2,8 +2,9 @@
 - 介绍
 http://objccn.io/issue-12-1/
 
-- 一个动画库
+- 动画库
 https://github.com/robb/RBBAnimation
+https://github.com/facebook/pop
 
 - 利用path实现按路径运行的动画
 http://oleb.net/blog/2010/12/animating-drawing-of-cgpath-with-cashapelayer/
