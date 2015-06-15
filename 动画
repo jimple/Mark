@@ -12,3 +12,5 @@ http://oleb.net/blog/2010/12/animating-drawing-of-cgpath-with-cashapelayer/
 - navigation controller中转场动画的介绍与一个例子
 http://objccn.io/issue-5-3/
 https://github.com/zys456465111/CustomPopAnimation
+https://github.com/BradLarson/GPUImage  // 用GPUImage处理提高效率
+
