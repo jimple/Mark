@@ -9,7 +9,7 @@
 
 - 使用HTTPS提高安全性
 
-- 使用SPDY压缩
+- 使用SPDY （不明觉厉）
 
 https://github.com/twitter/CocoaSPDY
 
