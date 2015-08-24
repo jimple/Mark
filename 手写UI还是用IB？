@@ -1,0 +1,12 @@
+
+到底是手写UI还是用IB，我赞同使用多Storyboard+部分xib+少量复杂灵活的手写。
+
+很赞同这篇博客的说法：
+
+http://onevcat.com/2013/12/code-vs-xib-vs-storyboard/
+
+唐巧的一篇关于手写UI的博客，我自己并不赞同。（可能是遇到的环境不同所以观点也不同）
+
+http://blog.devtang.com/blog/2015/03/22/ios-dev-controversy-2/
+
+
