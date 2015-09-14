@@ -7,6 +7,9 @@ http://onevcat.com/2014/06/walk-in-swift/
 每周一更的tips
 http://swifter.tips
 
+===========================================================
+Tips的总结
+
  - selector
 selector是objc runtime的概念，所以一个 Swift 中的 private 方法如果要使用selector，方法定义前需加上@objc。
 如果方法的第一个参数有外部变量的话，在通过字符串生成 Selector 时还有一个约定，那就是在方法名和第一个外部参数之间加上 with：
@@ -40,6 +43,18 @@ let result = object.method(1)
 getter和setter不可用f方式调用。
 如果类方法和实例方法同名，则上面f方式会取到类方法。
 
+ - 命名空间
+放到不同target里，比如建一个framework。
+统一module下把同名class放到不同struct里，使用时带上struct名。
+
+ - 单例
+private let sharedInstance = MyManager()
+class MyManager  {
+    class var sharedManager : MyManager {
+        return sharedInstance
+    }
+}
+利用let保证线程安全，通过private把变量限定在当前文件内。
 
 
 
