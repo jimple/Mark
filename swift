@@ -27,5 +27,20 @@ protocol内方法不加mutating的话，enum和struct继承时不可在方法内
 对于初始化方法，强制要求所有参数使用命名 (除非有特殊情况或完全没有歧义的情况下可以省略名称)。
 对于全局方法，不写参数名称，类似c方法调用。
 
+ - 下标
+自定义数组下标，扩展Array并实现新的subscript。
+
+ - 实例方法的动态调用
+let f = MyClass.method
+let object = MyClass()
+let result = f(object)(1)
+等价于
+let object = MyClass()
+let result = object.method(1)
+getter和setter不可用f方式调用。
+如果类方法和实例方法同名，则上面f方式会取到类方法。
+
+
+
 
 
