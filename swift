@@ -56,6 +56,11 @@ class MyManager  {
 }
 利用let保证线程安全，通过private把变量限定在当前文件内。
 
+ - block避免循环引用
+block内添加标注 [weak self] ，指明里面的值用何种方式使用。然后再
+if let strongSelf = self {
+        println("The name is \(strongSelf.name)")
+    }
 
 
 
