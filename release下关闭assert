@@ -1,0 +1,4 @@
+
+release下关闭assert
+在targets种选择build，选择release。在gcc preprocessing下增加Preprocessor Macros 值为 NS_BLOCK_ASSERTIONS.
+
