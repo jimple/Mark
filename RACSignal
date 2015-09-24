@@ -19,7 +19,6 @@
         NSLog(@"%@", newName);
     }];
 
-
 --------------------------------------------------------------------------
 // fetchUserRepos与fetchOrgRepos是两个异步操作，merge会在两个操作都完成的情况下返回一个新的信号。
 [[RACSignal 
@@ -29,8 +28,9 @@
     }];
     
     
+    
 --------------------------------------------------------------------------
--switchToLatest方法用于含有多个信号的信号(signal-of-signals)，它总是输出(forwards)最新的信号的值。
+- switchToLatest方法用于含有多个信号的信号(signal-of-signals)，它总是输出(forwards)最新的信号的值。
 RACSubject *letters = [RACSubject subject];
 RACSubject *numbers = [RACSubject subject];
 RACSubject *signalOfSignals = [RACSubject subject];
@@ -54,8 +54,8 @@ RACSignal *switched = [signalOfSignals switchToLatest];
 [numbers sendNext:@"2"];
 [letters sendNext:@"D"];
 
-
-
 --------------------------------------------------------------------------
+- 使用distinctUntilChanged后相同的值会被忽略
+[RACObserve(self.user, username) distinctUntilChanged];
 
 
