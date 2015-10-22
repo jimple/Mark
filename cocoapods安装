@@ -3,7 +3,7 @@
 
 $ gem sources --remove https://rubygems.org/
 //等有反应之后再敲入以下命令
-$ gem sources -a http://ruby.taobao.org/
+$ gem sources -a https://ruby.taobao.org/
 
 
 然后安装
