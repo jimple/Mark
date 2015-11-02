@@ -11,5 +11,8 @@ $ gem sources -a https://ruby.taobao.org/
 $ sudo gem install cocoapods
 
 
+OSX 10.11  Xcode7 安装报 Operation not permitted - /usr/bin/xcodeproj 问题的解决方法
+sudo gem install -n /usr/local/bin cocoapods
+
  
 
